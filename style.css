@@ -81,30 +81,16 @@ h3 {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  min-width: max-content;
+  flex: 0 0 auto;
+  min-width: 0;
 }
 
-.brand-mark {
-  display: grid;
-  width: 2.85rem;
-  height: 2.85rem;
-  place-items: center;
-  border-radius: 12px;
-  background: var(--accent-deep);
-  color: #fff;
-  font-family: "Crimson Text", serif;
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1;
-  box-shadow: 0 8px 18px rgba(18, 63, 81, 0.18);
-}
-
-.brand-name {
-  font-family: "Crimson Text", serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  line-height: 1;
+.brand-logo {
+  display: block;
+  width: clamp(5.75rem, 13vw, 7.25rem);
+  height: auto;
+  border-radius: 0.85rem;
+  box-shadow: 0 8px 18px rgba(18, 63, 81, 0.12);
 }
 
 .nav {
@@ -728,6 +714,10 @@ h3 {
 
   .nav a {
     font-size: 0.95rem;
+  }
+
+  .brand-logo {
+    width: 6.25rem;
   }
 
   .hero h1 {
