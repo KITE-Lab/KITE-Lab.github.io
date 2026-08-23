@@ -3,9 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EV Dataset Lab | Research Group</title>
+  <meta
+    name="description"
+    content="KITE Lab — Ke’s Intelligent Transportation Exploration Lab at HKUST(GZ), developing data, evaluation, and simulation methods for production autonomous vehicles."
+  />
+  <meta name="theme-color" content="#123f51" />
+  <meta property="og:title" content="KITE Lab" />
+  <meta
+    property="og:description"
+    content="Data, evaluation, and simulation for production autonomous vehicles."
+  />
+  <meta property="og:image" content="https://kite-lab.github.io/assets/Lab_Introduction.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>KITE Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
     rel="stylesheet"
@@ -13,135 +26,266 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="container">
       <div class="hero-top">
-        <p class="eyebrow">Electric Vehicle Data Platform</p>
+        <a class="brand" href="#top" aria-label="KITE Lab home">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">KITE Lab</span>
+        </a>
+
         <nav class="nav" aria-label="Primary">
           <a href="#research">Research</a>
-          <a href="#members">Members</a>
+          <a href="#pave">PAVE</a>
+          <a href="#evaluation">Evaluation</a>
+          <a href="#sandbox">Sandbox</a>
           <a href="#publications">Publications</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a href="#director">Director</a>
         </nav>
       </div>
 
       <div class="hero-content">
         <div class="hero-copy">
-          <h1>Intelligent Transportation Research Group</h1>
+          <h1>KITE Lab</h1>
+          <p class="lab-full-name">Ke’s Intelligent Transportation Exploration Lab</p>
           <p class="lead">
-            We build open, structured datasets for electric vehicle analysis,
-            intelligent driving research, and multimodal transportation
-            understanding.
+            We develop real-world data, behavior models, and evaluation methods
+            for production autonomous vehicles.
           </p>
-          <p class="hero-note">
-            Our group integrates vehicle telemetry, environmental context, and
-            real-world mobility scenarios to support reproducible academic
-            research.
-          </p>
+          <div class="hero-actions">
+            <a class="button" href="#pave">View PAVE Dataset <span aria-hidden="true">↘</span></a>
+          </div>
         </div>
 
-        <aside class="hero-panel">
-          <h2>Dataset Focus</h2>
-          <ul class="hero-list">
-            <li>EV energy consumption and SOC behavior</li>
-            <li>Multimodal sensing across cameras, GPS, and CAN/OBD</li>
-            <li>Scenario-aware driving data for downstream modeling</li>
-          </ul>
-        </aside>
+        <figure class="hero-figure">
+          <img
+            src="assets/Lab_Introduction.jpg"
+            alt="KITE Lab at the Hong Kong University of Science and Technology (Guangzhou)"
+            width="2275"
+            height="1279"
+          />
+        </figure>
       </div>
     </div>
   </header>
 
   <main>
+    <section id="mission" class="section mission-section">
+      <div class="container">
+        <div class="section-heading mission-heading">
+          <h2>Mission</h2>
+          <p>
+            KITE Lab is a research laboratory in the Intelligent Transportation
+            Thrust of the Systems Hub at The Hong Kong University of Science and
+            Technology (Guangzhou). Established in 2025 and led by Dr. Ke Ma, the
+            lab studies intelligent transportation systems and production
+            autonomous vehicles.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="research" class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="section-tag">Research</p>
-          <h2>Core Directions</h2>
-          <p>
-            Our work combines transportation systems, data infrastructure, and
-            machine learning to create high-quality benchmarks for electric
-            mobility research.
-          </p>
+          <h2>Research Programs</h2>
+          <p>We study production autonomous vehicles through data, evaluation, and simulation.</p>
         </div>
 
-        <div class="card-grid">
-          <article class="card">
-            <span class="card-index">01</span>
-            <h3>EV Dataset Construction</h3>
+        <div class="program-grid">
+          <article class="program-card">
+            <h3>PAVE Dataset</h3>
             <p>
-              Curating synchronized vehicle, route, and operational records for
-              robust benchmarking and open scientific use.
+              Synchronized multimodal driving data with explicit autonomous and
+              human-driven mode labels.
             </p>
           </article>
-          <article class="card">
-            <span class="card-index">02</span>
-            <h3>Energy and Range Modeling</h3>
+
+          <article class="program-card">
+            <h3>PAV Evaluation</h3>
             <p>
-              Studying battery usage, driving behavior, and environment-aware
-              energy prediction for electric vehicles.
+              Task-based, metric-based, and residual-based methods for analyzing
+              production vehicle behavior.
             </p>
           </article>
-          <article class="card">
-            <span class="card-index">03</span>
-            <h3>Intelligent Driving Analytics</h3>
+
+          <article class="program-card">
+            <h3>Simulation Sandbox</h3>
             <p>
-              Mining multimodal driving data to understand scenarios, decision
-              patterns, and safety-relevant events.
-            </p>
-          </article>
-          <article class="card">
-            <span class="card-index">04</span>
-            <h3>Urban Mobility Sensing</h3>
-            <p>
-              Integrating spatial, temporal, and vehicle-side observations to
-              support data-driven transportation research in real environments.
+              Scaled environments, miniature vehicles, and UAV platforms for
+              controlled and repeatable experiments.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="members" class="section alt">
+    <section id="pave" class="section alt">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-tag">Members</p>
-          <h2>Research Team</h2>
+        <div class="section-heading section-heading-wide">
+          <h2>PAVE Dataset</h2>
           <p>
-            We are a cross-disciplinary group spanning transportation
-            engineering, data systems, and intelligent vehicles.
+            PAVE is an end-to-end dataset for production autonomous vehicle
+            evaluation, combining synchronized multimodal data with explicit
+            AV/HV driving-mode labels.
           </p>
         </div>
 
-        <div class="member-grid">
-          <article class="member-card">
-            <div class="avatar">PI</div>
-            <h3>Prof. XXX</h3>
-            <p class="member-role">Principal Investigator</p>
-            <p>
-              Leads the group's research in intelligent transportation systems
-              and data-centric mobility analysis.
-            </p>
+        <div class="stat-grid" aria-label="PAVE dataset snapshot">
+          <div class="stat-card">
+            <strong>11</strong>
+            <span>vehicle platforms</span>
+          </div>
+          <div class="stat-card">
+            <strong>342.59</strong>
+            <span>valid driving hours</span>
+          </div>
+          <div class="stat-card">
+            <strong>16,205.02</strong>
+            <span>trajectory kilometers</span>
+          </div>
+          <div class="stat-card">
+            <strong>~40</strong>
+            <span>new hours each week</span>
+          </div>
+        </div>
+
+        <div class="pave-summary">
+          <p>
+            Each record combines multi-view cameras, GNSS/RTK and IMU
+            trajectories, CAN bus signals, and vehicle-state data.
+          </p>
+          <p>
+            Annotations cover driving modes, driving states, scenario conditions,
+            traffic participants, facilities, 3D boxes, and lane information.
+          </p>
+        </div>
+
+        <a
+          class="button"
+          href="https://kite-lab.github.io/PAVE_Dataset/"
+          target="_blank"
+          rel="noopener"
+        >
+          Open PAVE Project <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="project-media pave-media">
+          <figure class="media-card">
+            <img
+              src="assets/Figure_01_Collection_Platform_Sensor_Layout.png"
+              alt="PAVE collection platform and synchronized sensor layout with vehicle hardware, roof-mounted sensors, and calibrated multi-view geometry"
+              width="1800"
+              height="840"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              The PAVE collection platform synchronizes multi-view cameras,
+              GNSS/RTK, IMU, CAN bus, and vehicle-state signals.
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card-light">
+            <img
+              src="assets/Figure_02_Multi_Vehicle_Platforms.png"
+              alt="Representative production vehicle platforms from the PAVE collection"
+              width="1536"
+              height="648"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              Multiple production-vehicle platforms support cross-vehicle
+              analysis of real-world autonomous-driving behavior.
+            </figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img
+              src="assets/Figure_03_Annotation_Workflow.png"
+              alt="Model-assisted annotation and data integration workflow for PAVE"
+              width="1800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              A model-assisted workflow converts synchronized sensor records
+              into structured annotations and evaluation-ready data.
+            </figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img
+              src="assets/Figure_04_Scenario_Examples.jpg"
+              alt="Representative synchronized PAVE driving scenarios"
+              width="5760"
+              height="2160"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              Synchronized scene examples cover representative urban, highway,
+              and mixed-traffic driving conditions.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="evaluation" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Production Autonomous Vehicle Evaluation</h2>
+          <p>We evaluate PAV behavior through three complementary routes.</p>
+        </div>
+
+        <div class="evaluation-grid">
+          <article class="evaluation-card">
+            <h3>Task-based</h3>
+            <p>Validate scenarios and maneuvers.</p>
           </article>
-          <article class="member-card">
-            <div class="avatar">YW</div>
-            <h3>Yonglin Weng</h3>
-            <p class="member-role">Research Assistant</p>
-            <p>
-              Supports EV dataset curation, experiment design, and deployment
-              of data collection workflows.
-            </p>
+          <article class="evaluation-card">
+            <h3>Metric-based</h3>
+            <p>Measure trajectory and motion.</p>
           </article>
-          <article class="member-card">
-            <div class="avatar">GS</div>
-            <h3>Student XXX</h3>
-            <p class="member-role">Graduate Student</p>
-            <p>
-              Works on multimodal sensing, representation learning, and
-              downstream analysis of transportation datasets.
-            </p>
+          <article class="evaluation-card">
+            <h3>Residual-based</h3>
+            <p>Compare executed and reference behavior.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sandbox" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Connected Simulation Sandbox</h2>
+          <p>
+            A controlled environment for repeatable validation, algorithm
+            testing, and behavior diagnosis.
+          </p>
+        </div>
+
+        <div class="sandbox-panel">
+          <div class="sandbox-copy">
+            <p>
+              The sandbox connects scaled environments, miniature vehicles, and
+              unmanned aerial vehicle platforms to complement real-world PAV
+              analysis with scalable simulation experiments.
+            </p>
+          </div>
+          <figure class="sandbox-figure">
+            <img
+              src="assets/Figure_06_Multi_Domain_Connected_Simulation_Sandbox.jpg"
+              alt="Connected simulation sandbox with a scaled environment, miniature vehicles, and an unmanned aerial vehicle"
+              width="5712"
+              height="4284"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
         </div>
       </div>
     </section>
@@ -149,93 +293,142 @@
     <section id="publications" class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="section-tag">Publications</p>
-          <h2>Selected Papers</h2>
-          <p>
-            Representative publications related to electric vehicles,
-            multimodal sensing, and intelligent transportation data.
-          </p>
+          <h2>Selected Publications</h2>
         </div>
 
-        <div class="publication-year">
-          <h3>2026</h3>
-          <ol class="pub-list">
-            <li>
-              Author A, Author B, "Benchmarking Multimodal EV Driving Data for
-              Urban Scenario Analysis," <em>Conference/Journal</em>, 2026.
-            </li>
-            <li>
-              Author A, Author B, "Energy-Aware Modeling from Large-Scale
-              Electric Vehicle Telemetry," <em>Conference/Journal</em>, 2026.
-            </li>
-          </ol>
-        </div>
+        <div class="publication-list">
+          <article class="publication-year">
+            <h3>2026</h3>
+            <ol>
+              <li class="publication-item">
+                <span class="publication-title">Assessing Markov Property in Driving Behaviors: Insights from Statistical Tests.</span>
+                <p class="publication-citation">
+                  Li, Z., Meng, H., Ma, C., Ma, K., &amp; Li, X. (2026).
+                  <em>Transportation Research Part E: Logistics and Transportation Review</em>,
+                  209, 104740.
+                </p>
+                <div class="publication-actions">
+                  <a class="publication-link" href="https://doi.org/10.1016/j.tre.2026.104740" target="_blank" rel="noopener">
+                    DOI <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </li>
+              <li class="publication-item">
+                <span class="publication-title">Mining and Evaluating Autonomous Vehicle Behaviors: A Scene-Categorization Framework for Controlled Intersections.</span>
+                <p class="publication-citation">
+                  Liu, T., Ma, K., Liu, Y., &amp; Li, X. (2026).
+                  <em>Proceedings of the 2026 IEEE 29th International Conference
+                  on Intelligent Transportation Systems (ITSC)</em>.
+                </p>
+              </li>
+              <li class="publication-item">
+                <span class="publication-title">PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation.</span>
+                <p class="publication-citation">
+                  Li, X., Wang, C., Liu, Y., He, D., Zhang, J., &amp; Ma, K. (2026).
+                  <em>Proceedings of the IEEE/CVF Conference on Computer Vision
+                  and Pattern Recognition (CVPR 2026)</em>, 1010–1018.
+                </p>
+                <div class="publication-actions">
+                  <a class="publication-link" href="https://arxiv.org/abs/2511.14185" target="_blank" rel="noopener">
+                    Paper <span aria-hidden="true">↗</span>
+                  </a>
+                  <a class="publication-link" href="https://github.com/KITE-Lab/PAVE_Dataset/" target="_blank" rel="noopener">
+                    Code <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </li>
+            </ol>
+          </article>
 
-        <div class="publication-year">
-          <h3>2025</h3>
-          <ol class="pub-list">
-            <li>
-              Author A, Author B, "Synchronized Sensing for Intelligent Driving
-              Dataset Construction," <em>Conference/Journal</em>, 2025.
-            </li>
-            <li>
-              Author A, Author B, "Driving-State-Aware EV Energy Consumption
-              Analysis," <em>Conference/Journal</em>, 2025.
-            </li>
-          </ol>
+          <article class="publication-year">
+            <h3>2025</h3>
+            <ol>
+              <li class="publication-item">
+                <span class="publication-title">Safety Assurance Adaptive Control for Modular Autonomous Vehicles.</span>
+                <p class="publication-citation">
+                  Ma, C., Zhou, H., Zhang, P., Ma, K., Shi, H., &amp; Li, X. (2025).
+                  <em>Communications in Transportation Research</em>, 5, 100204.
+                </p>
+                <div class="publication-actions">
+                  <a class="publication-link" href="https://doi.org/10.1016/j.commtr.2025.100204" target="_blank" rel="noopener">
+                    DOI <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </li>
+              <li class="publication-item">
+                <span class="publication-title">A Modeling Methodology for Car-Following Behaviors of Automated Vehicles: Trade-Off Between Stability and Mobility.</span>
+                <p class="publication-citation">
+                  Zhang, Y., Ma, K., Xu, Z., Zhou, H., Ma, C., &amp; Li, X. (2025).
+                  <em>Transportation Research Part B: Methodological</em>,
+                  200, 103316.
+                </p>
+                <div class="publication-actions">
+                  <a class="publication-link" href="https://doi.org/10.1016/j.trb.2025.103316" target="_blank" rel="noopener">
+                    DOI <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </li>
+            </ol>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="section alt">
+    <section id="director" class="section alt">
       <div class="container">
         <div class="section-heading">
-          <p class="section-tag">Gallery</p>
-          <h2>Fieldwork and Data Collection</h2>
-          <p>
-            A visual overview of our experiments, sensing systems, and dataset
-            acquisition activities.
-          </p>
+          <h2>About the Author</h2>
         </div>
 
-        <div class="gallery-grid">
-          <figure class="gallery-card">
-            <div class="gallery-art road"></div>
-            <figcaption>On-road multimodal recording sessions.</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <div class="gallery-art dashboard"></div>
-            <figcaption>In-vehicle telemetry and sensor synchronization.</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <div class="gallery-art lab"></div>
-            <figcaption>Lab-side data review, annotation, and validation.</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <div class="gallery-art map"></div>
-            <figcaption>Route coverage analysis for urban mobility studies.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container contact-panel">
-        <div>
-          <p class="section-tag">Contact</p>
-          <h2>Collaborate With Us</h2>
-        </div>
-        <div class="contact-details">
-          <p><strong>Email:</strong> yourlab@example.com</p>
-          <p><strong>Address:</strong> HKUST(GZ), Intelligent Transportation Domain</p>
-        </div>
+        <article class="director-card">
+          <div class="director-portrait">
+            <img
+              class="profile-image"
+              src="assets/Figure_05_Ke_Ma_Portrait.jpg"
+              alt="Portrait of Ke Ma, Director of KITE Lab"
+              width="2880"
+              height="2880"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="director-copy">
+            <h3>Ke Ma</h3>
+            <p class="director-role">Lab Director · Assistant Professor</p>
+            <p>
+              Dr. Ke Ma is a tenure-track Assistant Professor in the Intelligent
+              Transportation Thrust of the Systems Hub at HKUST(GZ). He received
+              his Ph.D. from the Connected and Autonomous Transportation Systems
+              Laboratory at the University of Wisconsin–Madison.
+            </p>
+            <p>
+              His research focuses on Embodied Intelligence for Transportation
+              and Physical AI, with emphasis on safety, stability, and evaluation.
+            </p>
+            <a
+              class="button button-quiet"
+              href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=602"
+              target="_blank"
+              rel="noopener"
+            >
+              Faculty Profile <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Intelligent Transportation Research Group</p>
+    <div class="container footer-inner">
+      <div>
+        <p>KITE Lab · HKUST(GZ)</p>
+        <p class="footer-contact">
+          <a href="mailto:kema@hkust-gz.edu.cn">kema@hkust-gz.edu.cn</a>
+          · No.1 Du Xue Rd, Nansha District, Guangzhou, Guangdong, China
+        </p>
+      </div>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
 </body>
