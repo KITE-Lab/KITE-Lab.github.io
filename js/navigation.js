@@ -22,6 +22,27 @@ const setActiveSection = (sectionId) => {
   });
 };
 
+const homeLink = internalLinks.find(
+  (link) => link.getAttribute("href") === "#top",
+);
+
+if (homeLink) {
+  homeLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+    window.history.replaceState(null, "", "#top");
+    setActiveSection("top");
+  });
+}
+
 if (menuButton && navigation) {
   const setMenuState = (isOpen, returnFocus = false) => {
     menuButton.setAttribute("aria-expanded", String(isOpen));
